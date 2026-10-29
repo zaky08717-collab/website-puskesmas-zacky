@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Puskesmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Puskesmas Sehat</h1>
+        <p>Melayani dengan Sepenuh Hati</p>
+    </header>
+
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#daftar">Pendaftaran</a>
+        <a href="#pasien">Data Pasien</a>
+    </nav>
+
+    <main>
+        <h2>Pendaftaran Pasien</h2>
+
+        <form id="formPasien">
+            <input type="text" id="nama"
+                placeholder="Nama Pasien" required>
+
+            <input type="number" id="umur"
+                placeholder="Umur" required>
+
+            <input type="text" id="keluhan"
+                placeholder="Keluhan" required>
+
+            <button type="submit">Daftar</button>
+        </form>
+
+        <h2 id="pasien">Data Pasien</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Keluhan</th>
+                </tr>
+            </thead>
+            <tbody id="dataPasien"></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p> 2026 Puskesmas Sehat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
